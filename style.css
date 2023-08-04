@@ -1,0 +1,265 @@
+/* global          css        start  */
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,800;1,200;1,400;1,600;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.tex-right{
+    text-align: right;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+
+/* global      css          end */
+
+/* menu       section              css           start */
+.headerSection{
+    background-color:orangered;
+}
+.logo{
+    width: 70px;
+}
+.menu ul li{
+    display: inline-block;
+    position: relative;
+}
+.menu ul li a{
+    display: inline-block;
+    color:rgb(15, 14, 14);
+    font-size: 20px;
+    padding: 10px 17px;
+    line-height: 50px;
+}
+.menu ul li a:hover{
+    color: #1fad95;
+}
+
+/* dropdown menu start  */
+.dropdown{
+    width: 200px;
+    position: absolute;
+    background-color: orangered;
+    visibility: hidden;
+    opacity: 0;
+    transition: .7s;
+    transform: scaleY(0);
+}
+li .dropdown li{
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+.menu ul li:hover .dropdown{
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+    z-index: 2;
+}
+li .dropdown li a{
+    display: block;
+    padding: 20px;
+}
+li .dropdown li a:hover{
+    padding-left: 30px;
+}
+
+/* banner        section           start  */
+
+.bannerSection{
+    background-image: url(https://i.ibb.co/hss1tf6/kobu-agency-IWLR561-Yb-MY-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 400px 0;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+.bannerSection::after{
+    content: "";
+    background-color: rgba(0, 0, 0, .5);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.banner h3{
+    font-weight:400;
+}
+.banner h1 {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 169px;
+}
+.btn{
+    padding: 20px 40px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 10px;
+    color: darkgrey;
+    transition: .7s;
+}
+.btn:hover{
+    background-color: orange;
+    color: white;
+}
+/* price                          section                      start  */
+.priceSection{
+    padding: 50px 0;
+    background-color: #f1f2f7;
+}
+.price h2{
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 127px;
+    text-align: center;
+}
+.price p{
+    text-align: center;
+    margin-bottom: 27px;
+}
+.singlePrice{
+    width: 30%;
+    padding: 23px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    margin: 1%;
+}
+.p-header{
+    border-bottom: 2px solid #ddd;
+    padding: 20px;
+    transition: .7s;
+}
+.p-header:hover{
+    color: white;
+    background-color: #1fad95;
+}
+.p-header h4 {
+    font-weight: 400;
+    line-height: 47px;
+}
+.p-header h1 {
+    font-size: 37px;
+    font-weight: 800;
+    line-height: 84px;
+}
+.p-header span {
+    font-size: 13px;
+}
+.p-header h5 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 60px;
+}
+.p-contact {
+    padding: 20px;
+    line-height: 47px;
+}
+.p-contact span{
+    color: #1fad95;
+    margin-right: 5px;
+    font-size: 23px;
+}
+.p-btn{
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: bisque;
+    box-shadow: 1px 1px 17px rgba(0, 0, 0, .3);
+    color: #ffffff;
+    transition: .7s;
+}
+.p-btn:hover{
+    color: black;
+    background-color: #1fad95;
+}
+
+/* team            section             start */
+.teamSection{
+    padding: 50px 0;
+}
+.teams h4 {
+    font-size: 33px;
+    font-weight: 500;
+    line-height: 117px;
+}
+.member {
+    width: 15%;
+    border: 3px double goldenrod;
+    margin: 1%;
+    padding: 37px;
+    text-align: left;
+}
+.member h3{
+    font-weight: 400;
+    line-height: 30px;
+}
+/* news       letter      section            start */
+.newsletter{
+    padding: 50px 0;
+}
+.newstext h2 {
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 107px;
+}
+.default-input{
+    margin: 23px auto;
+    width: 70%;
+    padding: 27px 7px;
+    border: 1px solid #aa972c;
+    display: block;
+    border-radius: 5px;
+}
+.default-input:focus{
+    outline: none;
+    box-shadow: 1px 1px 7px springgreen;
+}
+.button-sub {
+    padding: 23px 93px;
+    background: #aa972c;
+    border: none;
+    color: wheat;
+    border-radius: 7px;
+    font-size: 20px;
+    border: 2px solid #aa972c;
+    transition: .7s;
+}
+.button-sub:hover{
+    border: 2px solid #aa972c;
+    background-color: white;
+    color: orange;
+}
